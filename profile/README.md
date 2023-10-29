@@ -1,6 +1,6 @@
-# JARVis- Aid For The Vision Impairment
+# JARVis- Aid For The Visually Impaired
 
-Welcome to the Vision Aid Project! This project aims to assist blind or visually impaired individuals in perceiving and understanding the world around them through image and text processing. This repository contains the backend code for the Vision Aid system.
+Welcome to JARVis! This project aims to assist blind or visually impaired individuals in perceiving and understanding the world around them through image and text processing. This repository contains the backend code for the Vision Aid system.
 
 ## Table of Contents
 
