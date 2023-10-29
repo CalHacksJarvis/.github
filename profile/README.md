@@ -1,4 +1,4 @@
-# JARVis- Aid For The Visually Impaired
+# JARVis- Aid for the Visually Impaired
 
 Welcome to JARVis! This project aims to assist blind or visually impaired individuals in perceiving and understanding the world around them through image and text processing. This repository contains the backend code for the Vision Aid system.
 
@@ -6,6 +6,8 @@ Welcome to JARVis! This project aims to assist blind or visually impaired indivi
 
 - [Introduction](#introduction)
 - [How It Works](#how-it-works)
+- [Key Technologies](#key-technologies)
+- [Libraries Used](#libraries-used)
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
@@ -28,6 +30,49 @@ The Vision Aid Project is designed to provide real-time assistance to visually i
 
 5. **Real-time Communication**: The backend communicates in real-time with the frontend using WebSockets, enabling seamless user interactions.
 
+## Key Technologies
+
+### Zepp
+
+- **Zepp**: We partnered with Zepp Health and integrated our frontend with ZepOS to activate our LLAVA model and for emotional analysis.
+
+### Zilliz
+
+- **Zilliz**: Zilliz provides a cloud-based platform for high-performance data analytics and visualization. Zilliz is utilized for real-time image analysis and similarity searches of images.
+
+### Hume
+
+- **Hume**: HumeStream is a part of Zilliz and provides real-time stream processing capabilities. In this project, Hume is used for real-time image analysis and emotion recognition.
+
+### Amazon Textract
+
+- **Amazon Textract**: Amazon Textract is a service for extracting text and data from images. It is used in the project to extract textual content from images for accessibility.
+
+### Milvus
+
+- **Milvus**: Milvus is an open-source vector database designed for AI and machine learning. It is used for similarity search of images in this project.
+
+### gTTS (Google Text-to-Speech)
+
+- **gTTS (Google Text-to-Speech)**: gTTS is a Python library and CLI tool to convert text to speech. It is used for providing voice output of image descriptions and textual content to users.
+
+## Libraries Used
+
+The Vision Aid Project makes use of the following libraries:
+
+- **Flask**: A web framework for building the backend server.
+- **Boto3**: The AWS SDK for Python, used for interacting with Amazon Textract.
+- **Pymilvus**: A Python client for Milvus, used for similarity search of images.
+- **Websockets**: A library for WebSocket communication.
+- **Pillow**: A Python Imaging Library, used for image manipulation.
+- **Pusher**: A library for real-time communication via the Pusher service.
+- **PyTorch**: An open-source deep learning framework.
+- **Transformers**: A library for Natural Language Processing tasks.
+- **Langchain**: A library for text processing, splitting, and retrieval.
+- **MongoDB**: A NoSQL database for storing and retrieving information.
+- **NumPy**: A library for numerical operations.
+- **Matplotlib**: A library for creating visualizations and plots.
+
 ## Features
 
 - **Image Recognition**: Detects and describes scenes and emotions in real-time.
@@ -35,7 +80,7 @@ The Vision Aid Project is designed to provide real-time assistance to visually i
 - **Natural Language Understanding**: Answers user queries and provides contextual information.
 - **Voice Output**: Converts text to speech for user-friendly communication.
 - **Real-time Communication**: WebSocket integration for instant interaction with the frontend.
-- **External Service Integration**: Connects with HumeStream for image analysis and Milvus for image similarity search.
+- **External Service Integration**: Connects with Zepp, Zilliz, Hume, Amazon Textract, and other services for advanced image analysis.
 
 ## Getting Started
 
@@ -45,7 +90,7 @@ To start using the Vision Aid Project, follow these steps:
 
 2. Install the required Python libraries using `pip install -r requirements.txt`.
 
-3. Configure external services such as HumeStream, Milvus, and MongoDB as needed.
+3. Configure external services such as Zepp, Zilliz, Hume, Amazon Textract, and Milvus as needed.
 
 4. Run the Flask application using `python app.py`.
 
